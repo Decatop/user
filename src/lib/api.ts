@@ -27,7 +27,7 @@ async function get<T>(path: string, fallback: T, revalidate = REVALIDATE): Promi
 }
 
 export const DEFAULT_SITE_SETTINGS: SiteSettings = {
-  business_name: 'Nasuru Interiors',
+  business_name: 'Decatop Global Roofing System',
   tagline: 'Interior Deco Supply: Curtains, Wallpapers, Wall Panels & Flooring',
   logo_url: null,
   primary_color: '#2F5D8C',
@@ -36,7 +36,7 @@ export const DEFAULT_SITE_SETTINGS: SiteSettings = {
   phone: '',
   whatsapp: '',
   whatsapp_greeting:
-    'Welcome to Nasuru Interiors. How can we help with your interior decor today?',
+    'Welcome to Decatop Global Roofing System. How can we help with your interior decor today?',
   email: '',
   address: '',
   city: '',
@@ -49,9 +49,9 @@ export const DEFAULT_SITE_SETTINGS: SiteSettings = {
   youtube_url: '',
   tiktok_url: '',
   default_meta_title:
-    'Nasuru Interiors: Wall Panels & Interior Decor in Lagos',
+    'Decatop Global Roofing System: Wall Panels & Interior Decor in Lagos',
   default_meta_description:
-    'Nasuru Interiors supplies curtains, wallpapers, wall panels, flooring, lighting and decor in Nigeria. Quality products, fair prices and free quotes.',
+    'Decatop Global Roofing System supplies curtains, wallpapers, wall panels, flooring, lighting and decor in Nigeria. Quality products, fair prices and free quotes.',
   copyright_text: '',
 };
 

@@ -1,133 +1,2433 @@
 [
-  {
-    "id": "uv-marble-8x4",
-    "name": "PVC/UV marble sheet",
-    "size": "4ft x 8ft",
-    "width": 1.2192,
-    "length": 2.4384,
-    "kind": "sheet",
-    "price": 30000,
-    "unitName": "sheet",
-    "material": "Plastic",
-    "origin": "Local",
-    "thicknessMm": 3,
-    "guide": "/articles/price-of-marble-sheets-in-nigeria-lagos-2026"
-  },
-  {
-    "id": "uv-marble-9x4",
-    "name": "PVC/UV marble sheet",
-    "size": "9ft x 4ft",
-    "width": 1.2192,
-    "length": 2.7432,
-    "kind": "sheet",
-    "price": 45000,
-    "unitName": "sheet",
-    "material": "PVC",
-    "origin": "Imported",
-    "thicknessMm": 4,
-    "guide": "/articles/9ft-by-4ft-pvc-marble-sheet-3mm-size-uses-and-installation-guide"
-  },
-  {
-    "id": "charcoal-board-9x4",
-    "name": "Charcoal board",
-    "size": "9ft x 4ft",
-    "width": 1.2192,
-    "length": 2.7432,
-    "kind": "sheet",
-    "price": 65000,
-    "unitName": "board",
-    "material": "PVC",
-    "thicknessMm": 5
-  },
-  {
-    "id": "acrylic-mirror-9x4",
-    "name": "Acrylic mirror board",
-    "size": "9ft x 4ft",
-    "width": 1.2192,
-    "length": 2.7432,
-    "kind": "sheet",
-    "price": 65000,
-    "unitName": "board"
-  },
-  {
-    "id": "acrylic-marble-8x4",
-    "name": "Acrylic marble board",
-    "size": "8ft x 4ft",
-    "width": 1.2192,
-    "length": 2.4384,
-    "kind": "sheet",
-    "price": 65000,
-    "unitName": "board",
-    "thicknessMm": 5,
-    "guide": "/articles/price-of-acrylic-marble-board-in-nigeria-lagos-2026"
-  },
-  {
-    "id": "foam-panel-2x9",
-    "name": "Foam sheet wall panel",
-    "size": "2ft x 9ft",
-    "width": 0.6096,
-    "length": 2.7432,
-    "kind": "sheet",
-    "price": 20000,
-    "unitName": "panel"
-  },
-  {
-    "id": "pu-stone-60x120",
-    "name": "PU stone wall panel",
-    "size": "2ft x 4ft",
-    "width": 0.6096,
-    "length": 1.2192,
-    "kind": "sheet",
-    "price": 25000,
-    "unitName": "panel",
-    "thicknessMm": 30,
-    "guide": "/articles/price-of-pu-stone-wall-panels-in-nigeria-lagos-2026"
-  },
-  {
-    "id": "fluted-wpc-290x16",
-    "name": "Fluted wall panel (WPC)",
-    "size": "2.9m x 16cm",
-    "width": 0.16,
-    "length": 2.9,
-    "kind": "strip",
-    "price": 5500,
-    "unitName": "panel",
-    "material": "WPC",
-    "thicknessMm": 12,
-    "guide": "/articles/price-of-fluted-wall-panels-in-nigeria-lagos-2026"
-  },
-  {
-    "id": "wpc-exterior-fluted-06x9",
-    "name": "WPC exterior fluted panel",
-    "size": "0.6ft x 9ft",
-    "width": 0.18288,
-    "length": 2.7432,
-    "kind": "strip",
-    "price": 31500,
-    "unitName": "panel",
-    "material": "WPC",
-    "thicknessMm": 16
-  },
-  {
-    "id": "marble-sticker-60x300",
-    "name": "Marble sticker roll",
-    "size": "60cm x 3m",
-    "width": 0.6,
-    "length": 3,
-    "kind": "roll",
-    "price": 3000,
-    "unitName": "roll",
-    "guide": "/articles/price-of-marble-stickers-in-nigeria-lagos-2026"
-  },
-  {
-    "id": "self-adhesive-60x1000",
-    "name": "Self-adhesive marble sticker roll",
-    "size": "60cm x 10m",
-    "width": 0.6,
-    "length": 10,
-    "kind": "roll",
-    "price": 20000,
-    "unitName": "roll",
-    "guide": "/articles/price-of-self-adhesive-marble-stickers-in-nigeria-lagos-2026"
-  }
+    {
+        "id": "stone-coated-classic-low-045-all-colors",
+        "name": "Stone-Coated Tile - Classic",
+        "size": "Low Gauge | 0.45 mm | All colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 4700,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Classic"
+            },
+            {
+                "name": "Gauge",
+                "value": "Low Gauge, 0.45 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-bond-low-045-all-colors",
+        "name": "Stone-Coated Tile - Bond",
+        "size": "Low Gauge | 0.45 mm | All colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 4700,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Bond"
+            },
+            {
+                "name": "Gauge",
+                "value": "Low Gauge, 0.45 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-shingle-low-045-all-colors",
+        "name": "Stone-Coated Tile - Shingle",
+        "size": "Low Gauge | 0.45 mm | All colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 4800,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Shingle"
+            },
+            {
+                "name": "Gauge",
+                "value": "Low Gauge, 0.45 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-milano-low-045-all-colors",
+        "name": "Stone-Coated Tile - Milano",
+        "size": "Low Gauge | 0.45 mm | All colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 4800,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Milano"
+            },
+            {
+                "name": "Gauge",
+                "value": "Low Gauge, 0.45 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-roman-low-045-all-colors",
+        "name": "Stone-Coated Tile - Roman",
+        "size": "Low Gauge | 0.45 mm | All colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5200,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Roman"
+            },
+            {
+                "name": "Gauge",
+                "value": "Low Gauge, 0.45 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-classic-medium-050-black",
+        "name": "Stone-Coated Tile - Classic",
+        "size": "Medium Gauge | 0.50 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Classic"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-bond-medium-050-black",
+        "name": "Stone-Coated Tile - Bond",
+        "size": "Medium Gauge | 0.50 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Bond"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-shingle-medium-050-black",
+        "name": "Stone-Coated Tile - Shingle",
+        "size": "Medium Gauge | 0.50 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Shingle"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-milano-medium-050-black",
+        "name": "Stone-Coated Tile - Milano",
+        "size": "Medium Gauge | 0.50 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Milano"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-roman-medium-050-black",
+        "name": "Stone-Coated Tile - Roman",
+        "size": "Medium Gauge | 0.50 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5700,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Roman"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-classic-medium-050-other-colors",
+        "name": "Stone-Coated Tile - Classic",
+        "size": "Medium Gauge | 0.50 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5650,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Classic"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-bond-medium-050-other-colors",
+        "name": "Stone-Coated Tile - Bond",
+        "size": "Medium Gauge | 0.50 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5650,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Bond"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-shingle-medium-050-other-colors",
+        "name": "Stone-Coated Tile - Shingle",
+        "size": "Medium Gauge | 0.50 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5650,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Shingle"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-milano-medium-050-other-colors",
+        "name": "Stone-Coated Tile - Milano",
+        "size": "Medium Gauge | 0.50 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5650,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Milano"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-roman-medium-050-other-colors",
+        "name": "Stone-Coated Tile - Roman",
+        "size": "Medium Gauge | 0.50 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5750,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Roman"
+            },
+            {
+                "name": "Gauge",
+                "value": "Medium Gauge, 0.50 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-classic-hard-055-black",
+        "name": "Stone-Coated Tile - Classic",
+        "size": "Hard Gauge | 0.55 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6550,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Classic"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-bond-hard-055-black",
+        "name": "Stone-Coated Tile - Bond",
+        "size": "Hard Gauge | 0.55 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6550,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Bond"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-shingle-hard-055-black",
+        "name": "Stone-Coated Tile - Shingle",
+        "size": "Hard Gauge | 0.55 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6650,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Shingle"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-milano-hard-055-black",
+        "name": "Stone-Coated Tile - Milano",
+        "size": "Hard Gauge | 0.55 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6650,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Milano"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-roman-hard-055-black",
+        "name": "Stone-Coated Tile - Roman",
+        "size": "Hard Gauge | 0.55 mm | Black",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6800,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Roman"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "Black"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-classic-hard-055-other-colors",
+        "name": "Stone-Coated Tile - Classic",
+        "size": "Hard Gauge | 0.55 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6600,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Classic"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-bond-hard-055-other-colors",
+        "name": "Stone-Coated Tile - Bond",
+        "size": "Hard Gauge | 0.55 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6600,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Bond"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-shingle-hard-055-other-colors",
+        "name": "Stone-Coated Tile - Shingle",
+        "size": "Hard Gauge | 0.55 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6700,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Shingle"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-milano-hard-055-other-colors",
+        "name": "Stone-Coated Tile - Milano",
+        "size": "Hard Gauge | 0.55 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6700,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Milano"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "stone-coated-roman-hard-055-other-colors",
+        "name": "Stone-Coated Tile - Roman",
+        "size": "Hard Gauge | 0.55 mm | Other colors",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6850,
+        "unitName": "m2",
+        "material": "Stone-coated steel",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported stone-coated roofing tile. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Profile",
+                "value": "Roman"
+            },
+            {
+                "name": "Gauge",
+                "value": "Hard Gauge, 0.55 mm"
+            },
+            {
+                "name": "Color",
+                "value": "All other colors"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "sealant-kit-large",
+        "name": "Sealant Kit - Large",
+        "size": "Large kit",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 10000,
+        "unitName": "kit",
+        "material": "Roofing accessory",
+        "origin": "Imported",
+        "description": "Imported roofing accessory. Price per kit."
+    },
+    {
+        "id": "sealant-kit-small",
+        "name": "Sealant Kit - Small",
+        "size": "Small kit",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7000,
+        "unitName": "kit",
+        "material": "Roofing accessory",
+        "origin": "Imported",
+        "description": "Imported roofing accessory. Price per kit."
+    },
+    {
+        "id": "nail-pack",
+        "name": "Nail Pack",
+        "size": "Pack",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 11000,
+        "unitName": "pack",
+        "material": "Roofing accessory",
+        "origin": "Imported",
+        "description": "Imported roofing accessory. Price per pack."
+    },
+    {
+        "id": "sunbreaker-blade",
+        "name": "Sunbreaker Blade",
+        "size": "Single blade",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 8000,
+        "unitName": "piece",
+        "material": "Roofing accessory",
+        "origin": "Imported",
+        "description": "Imported roofing accessory. Price per piece."
+    },
+    {
+        "id": "sunbreaker-1132",
+        "name": "Sunbreaker 1132",
+        "size": "1132",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6000,
+        "unitName": "piece",
+        "material": "Roofing accessory",
+        "origin": "Imported",
+        "description": "Imported roofing accessory. Price per piece."
+    },
+    {
+        "id": "aluminium-long-span-040",
+        "name": "Aluminium Long Span",
+        "size": "0.40 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5100,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.4,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.40 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-045b",
+        "name": "Aluminium Long Span",
+        "size": "0.45 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5400,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-045a",
+        "name": "Aluminium Long Span",
+        "size": "0.45 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5800,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-050b",
+        "name": "Aluminium Long Span",
+        "size": "0.50 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6100,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-050a",
+        "name": "Aluminium Long Span",
+        "size": "0.50 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6500,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-055b",
+        "name": "Aluminium Long Span",
+        "size": "0.55 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6900,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-055a",
+        "name": "Aluminium Long Span",
+        "size": "0.55 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7300,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-060b",
+        "name": "Aluminium Long Span",
+        "size": "0.60 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 8500,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-060a",
+        "name": "Aluminium Long Span",
+        "size": "0.60 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 11550,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-070b",
+        "name": "Aluminium Long Span",
+        "size": "0.70 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 12800,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-070a",
+        "name": "Aluminium Long Span",
+        "size": "0.70 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 13800,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-long-span-075",
+        "name": "Aluminium Long Span",
+        "size": "0.75 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 15800,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.75,
+        "description": "Imported aluminium long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.75 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-035",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.35 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 9200,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.35,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.35 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-040",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.40 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 10500,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.4,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.40 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-045",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.45 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 11550,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-050",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.50 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 12500,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-055",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.55 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 13300,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-060",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.60 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 14000,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-065",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.65 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 14900,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.65,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.65 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-070",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.70 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 15900,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-080",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.80 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": null,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.8,
+        "description": "Imported aluminium caliper roofing. Price not listed; ask for current rate.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.80 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Price on request"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-090",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "0.90 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": null,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.9,
+        "description": "Imported aluminium caliper roofing. Price not listed; ask for current rate.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.90 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Price on request"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-100",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "1.00 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 27600,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 1,
+        "description": "Imported aluminium caliper roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "1.00 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-caliper-120",
+        "name": "Aluminium Caliper Standard Gauge",
+        "size": "1.20 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": null,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 1.2,
+        "description": "Imported aluminium caliper roofing. Price not listed; ask for current rate.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "1.20 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Price on request"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-045b",
+        "name": "Aluminium Step Tile",
+        "size": "0.45 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-045a",
+        "name": "Aluminium Step Tile",
+        "size": "0.45 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6000,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-050b",
+        "name": "Aluminium Step Tile",
+        "size": "0.50 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6300,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-050a",
+        "name": "Aluminium Step Tile",
+        "size": "0.50 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6700,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-055b",
+        "name": "Aluminium Step Tile",
+        "size": "0.55 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7100,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-055a",
+        "name": "Aluminium Step Tile",
+        "size": "0.55 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7400,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-060b",
+        "name": "Aluminium Step Tile",
+        "size": "0.60 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 8700,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-060a",
+        "name": "Aluminium Step Tile",
+        "size": "0.60 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 11750,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-070b",
+        "name": "Aluminium Step Tile",
+        "size": "0.70 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 13000,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-step-tile-070a",
+        "name": "Aluminium Step Tile",
+        "size": "0.70 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 14000,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium step-tile roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-045b",
+        "name": "Aluminium Metcopo",
+        "size": "0.45 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-045a",
+        "name": "Aluminium Metcopo",
+        "size": "0.45 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6100,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.45,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.45 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-050b",
+        "name": "Aluminium Metcopo",
+        "size": "0.50 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6400,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-050a",
+        "name": "Aluminium Metcopo",
+        "size": "0.50 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6800,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.5,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.50 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-055b",
+        "name": "Aluminium Metcopo",
+        "size": "0.55 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7200,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-055a",
+        "name": "Aluminium Metcopo",
+        "size": "0.55 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7500,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.55,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.55 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-060b",
+        "name": "Aluminium Metcopo",
+        "size": "0.60 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 8800,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-060a",
+        "name": "Aluminium Metcopo",
+        "size": "0.60 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 11850,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.6,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.60 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-070b",
+        "name": "Aluminium Metcopo",
+        "size": "0.70 mm | Grade B",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 13100,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "B"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluminium-metcopo-070a",
+        "name": "Aluminium Metcopo",
+        "size": "0.70 mm | Grade A",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 14100,
+        "unitName": "m2",
+        "material": "Aluminium",
+        "origin": "Imported",
+        "thicknessMm": 0.7,
+        "description": "Imported aluminium Metcopo roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.70 mm"
+            },
+            {
+                "name": "Grade",
+                "value": "A"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-016",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.16 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 3200,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.16,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.16 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-018",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.18 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 3800,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.18,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.18 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-020",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.20 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 4400,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.2,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.20 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-022",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.22 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5000,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.22,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.22 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-024",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.24 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 5600,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.24,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.24 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-026",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.26 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6200,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.26,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.26 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-028",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.28 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 6800,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.28,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.28 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-long-span-030",
+        "name": "Alu-Zinc Long Span",
+        "size": "0.30 mm",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 7400,
+        "unitName": "m2",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.3,
+        "description": "Imported alu-zinc long-span roofing. Price per square metre.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.30 mm"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per square metre"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-bundle-015",
+        "name": "Alu-Zinc Bundle Sheets",
+        "size": "0.15 mm | 15 sheets per bundle",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 28950,
+        "unitName": "bundle of 15 sheets",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.15,
+        "description": "Imported alu-zinc roofing sheets. Price per bundle of 15 sheets.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.15 mm"
+            },
+            {
+                "name": "Bundle quantity",
+                "value": "15 sheets"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per bundle"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-bundle-018",
+        "name": "Alu-Zinc Bundle Sheets",
+        "size": "0.18 mm | 15 sheets per bundle",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 49000,
+        "unitName": "bundle of 15 sheets",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.18,
+        "description": "Imported alu-zinc roofing sheets. Price per bundle of 15 sheets.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.18 mm"
+            },
+            {
+                "name": "Bundle quantity",
+                "value": "15 sheets"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per bundle"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-bundle-020",
+        "name": "Alu-Zinc Bundle Sheets",
+        "size": "0.20 mm | 15 sheets per bundle",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 55300,
+        "unitName": "bundle of 15 sheets",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.2,
+        "description": "Imported alu-zinc roofing sheets. Price per bundle of 15 sheets.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.20 mm"
+            },
+            {
+                "name": "Bundle quantity",
+                "value": "15 sheets"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per bundle"
+            }
+        ]
+    },
+    {
+        "id": "aluzinc-bundle-022",
+        "name": "Alu-Zinc Bundle Sheets",
+        "size": "0.22 mm | 15 sheets per bundle",
+        "width": null,
+        "length": null,
+        "kind": "sheet",
+        "calculatorEnabled": false,
+        "price": 75000,
+        "unitName": "bundle of 15 sheets",
+        "material": "Aluminium-zinc",
+        "origin": "Imported",
+        "thicknessMm": 0.22,
+        "description": "Imported alu-zinc roofing sheets. Price per bundle of 15 sheets.",
+        "specifications": [
+            {
+                "name": "Gauge",
+                "value": "0.22 mm"
+            },
+            {
+                "name": "Bundle quantity",
+                "value": "15 sheets"
+            },
+            {
+                "name": "Price basis",
+                "value": "Per bundle"
+            }
+        ]
+    }
 ]

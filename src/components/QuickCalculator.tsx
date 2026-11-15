@@ -32,16 +32,20 @@ const labelCls = 'mb-1 block text-xs font-semibold text-brand-muted';
  * windows, custom sizes) lives at /calculator and opens pre-filled with these values.
  */
 export default function QuickCalculator({ whatsapp, products }: { whatsapp?: string; products: Product[] }) {
-  const [productId, setProductId] = useState(products[0]?.id ?? '');
+  const calculatorProducts = products.filter(
+    (product): product is Product & { width: number; length: number } =>
+      product.calculatorEnabled && product.width !== null && product.length !== null,
+  );
+  const [productId, setProductId] = useState(calculatorProducts[0]?.id ?? '');
   const [unit, setUnit] = useState<Unit>('m');
   const [width, setWidth] = useState('');
   const [height, setHeight] = useState('');
 
   useEffect(() => {
-    if (!products.some((item) => item.id === productId)) setProductId(products[0]?.id ?? '');
-  }, [products, productId]);
+    if (!calculatorProducts.some((item) => item.id === productId)) setProductId(calculatorProducts[0]?.id ?? '');
+  }, [calculatorProducts, productId]);
 
-  const product = products.find((p) => p.id === productId) ?? products[0];
+  const product = calculatorProducts.find((p) => p.id === productId) ?? calculatorProducts[0];
   const k = UNIT_TO_M[unit];
   const result = useMemo(
     () => {
@@ -72,7 +76,7 @@ export default function QuickCalculator({ whatsapp, products }: { whatsapp?: str
   }`;
   const waText = ready
     ? [
-        'Hello Nasuru Interiors, I used your calculator.',
+        'Hello Decatop Global Roofing System, I used your calculator.',
         `Product: ${describeProduct(product)}`,
         `Wall: ${width}${unit} wide x ${height}${unit} high`,
         `Area: ${result.netArea.toFixed(2)} m²`,
@@ -99,7 +103,7 @@ export default function QuickCalculator({ whatsapp, products }: { whatsapp?: str
             Product
           </label>
           <select id="qc-product" className={inputCls} value={productId} onChange={(e) => setProductId(e.target.value)}>
-            {products.map((p) => (
+            {calculatorProducts.map((p) => (
               <option key={p.id} value={p.id}>
                 {describeProduct(p)}
                 {p.price !== null ? ` · ${naira(p.price)}/${p.unitName}` : ' · price on request'}

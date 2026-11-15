@@ -21,6 +21,9 @@ export default function Hero({
   settings: SiteSettings;
   products: Product[];
 }) {
+  const hasCalculatorProducts = products.some(
+    (product) => product.calculatorEnabled && product.width !== null && product.length !== null,
+  );
   const useImage = hero.background_type === 'image' && !!hero.image_url;
   const fallbackColor = hero.background_color || settings.default_hero_color || '#2F5D8C';
 
@@ -63,18 +66,20 @@ export default function Hero({
         />
       )}
 
-      <div className="relative z-10 mx-auto grid w-full max-w-content gap-10 px-5 pb-14 pt-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-14 lg:py-28">
+      <div className={`relative z-10 mx-auto grid w-full max-w-content gap-10 px-5 pb-14 pt-24 ${hasCalculatorProducts ? 'lg:grid-cols-[1.1fr_0.9fr]' : 'lg:grid-cols-1'} lg:items-center lg:gap-14 lg:py-28`}>
         {/* Quick calculator: first thing on phones, right-hand column on desktop. It comes first
             in the page so phone users (and keyboard/screen-reader users) reach it straight away. */}
-        <div className="lg:order-last">
-          <QuickCalculator whatsapp={settings.whatsapp} products={products} />
-        </div>
+        {hasCalculatorProducts && (
+          <div className="lg:order-last">
+            <QuickCalculator whatsapp={settings.whatsapp} products={products} />
+          </div>
+        )}
 
         {/* No fade-in here: the heading is the phone LCP element, and animating it from
             opacity 0 delayed LCP by the length of the animation. */}
         <div>
           <span className="eyebrow mb-5" style={{ color: '#E9C75A' }}>
-            Interior Deco Supply
+            Roofing Systems &amp; Materials
           </span>
           <h1
             className="font-serif text-4xl font-semibold leading-[1.08] sm:text-5xl xl:text-6xl"

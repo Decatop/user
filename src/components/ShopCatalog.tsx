@@ -6,27 +6,33 @@ import { useMemo, useState } from 'react';
 import { ArrowRight, Calculator, Check, Layers, MessageCircle, Search, SlidersHorizontal } from 'lucide-react';
 import { describeProduct, type Product } from '@/lib/products';
 
-type ProductGroup = 'wall-panels' | 'sheets-boards' | 'rolls';
+type ProductGroup = 'stone-coated' | 'aluminium' | 'alu-zinc' | 'accessories' | 'other';
 type CategoryFilter = 'all' | ProductGroup;
 type SortOrder = 'featured' | 'price-low' | 'price-high';
 
 const FILTERS: { id: CategoryFilter; label: string }[] = [
   { id: 'all', label: 'All products' },
-  { id: 'wall-panels', label: 'Wall panels' },
-  { id: 'sheets-boards', label: 'Sheets & boards' },
-  { id: 'rolls', label: 'Stickers & rolls' },
+  { id: 'stone-coated', label: 'Stone-coated tiles' },
+  { id: 'aluminium', label: 'Aluminium roofing' },
+  { id: 'alu-zinc', label: 'Alu-zinc roofing' },
+  { id: 'accessories', label: 'Accessories' },
+  { id: 'other', label: 'Other' },
 ];
 
 function groupFor(product: Product): ProductGroup {
-  if (product.kind === 'roll') return 'rolls';
-  if (product.kind === 'strip' || /panel/i.test(product.name)) return 'wall-panels';
-  return 'sheets-boards';
+  if (product.material === 'Stone-coated steel') return 'stone-coated';
+  if (product.material === 'Aluminium') return 'aluminium';
+  if (product.material === 'Aluminium-zinc') return 'alu-zinc';
+  if (product.material === 'Roofing accessory') return 'accessories';
+  return 'other';
 }
 
 function groupLabel(group: ProductGroup): string {
-  if (group === 'wall-panels') return 'Wall panel';
-  if (group === 'rolls') return 'Sticker & roll';
-  return 'Sheet & board';
+  if (group === 'stone-coated') return 'Stone-coated tile';
+  if (group === 'aluminium') return 'Aluminium roofing';
+  if (group === 'alu-zinc') return 'Alu-zinc roofing';
+  if (group === 'accessories') return 'Roofing accessory';
+  return 'Other product';
 }
 
 function formatMeters(value: number): string {
@@ -103,7 +109,7 @@ function ProductArtwork({ product }: { product: Product }) {
 function ProductCard({ product, whatsapp }: { product: Product; whatsapp?: string }) {
   const digits = whatsapp?.replace(/\D/g, '');
   const orderMessage = [
-    'Hello Nasuru Interiors, I would like to order:',
+    'Hello Decatop Global Roofing System, I would like to order:',
     describeProduct(product),
     product.price === null
       ? 'Please confirm the current price.'
@@ -119,8 +125,10 @@ function ProductCard({ product, whatsapp }: { product: Product; whatsapp?: strin
 
   const specifications = [
     { label: 'Listed size', value: product.size },
-    { label: 'Calculator dimensions', value: `${formatMeters(product.width)} × ${formatMeters(product.length)}` },
-    { label: 'Calculator item type', value: calculatorKindLabel(product.kind) },
+    product.calculatorEnabled && product.width !== null && product.length !== null
+      ? { label: 'Calculator dimensions', value: `${formatMeters(product.width)} × ${formatMeters(product.length)}` }
+      : null,
+    product.calculatorEnabled ? { label: 'Calculator item type', value: calculatorKindLabel(product.kind) } : null,
     product.material ? { label: 'Material', value: product.material } : null,
     product.origin ? { label: 'Origin', value: product.origin } : null,
     product.thicknessMm != null ? { label: 'Thickness', value: `${product.thicknessMm} mm` } : null,
@@ -193,15 +201,17 @@ function ProductCard({ product, whatsapp }: { product: Product; whatsapp?: strin
             View product details <ArrowRight size={15} aria-hidden="true" />
           </Link>
 
-          <div className="mt-5 grid gap-2 sm:grid-cols-2">
-            <Link
-              href={calculatorHref}
-              aria-label={`Calculate quantity for ${product.name}`}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-ink px-3 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2"
-            >
-              <Calculator size={17} aria-hidden="true" />
-              Calculate quantity
-            </Link>
+          <div className={`mt-5 grid gap-2 ${product.calculatorEnabled ? 'sm:grid-cols-2' : ''}`}>
+            {product.calculatorEnabled && (
+              <Link
+                href={calculatorHref}
+                aria-label={`Calculate quantity for ${product.name}`}
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-ink px-3 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2"
+              >
+                <Calculator size={17} aria-hidden="true" />
+                Calculate quantity
+              </Link>
+            )}
             <a
               href={orderHref}
               target={digits ? '_blank' : undefined}
@@ -255,13 +265,13 @@ export default function ShopCatalog({ products, whatsapp }: { products: Product[
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_10%,rgba(201,162,39,0.2),transparent_38%),linear-gradient(120deg,rgba(20,33,47,0.2),transparent)]" />
         <div className="relative mx-auto grid max-w-content gap-10 px-5 pb-14 pt-36 sm:pb-16 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:pb-20">
           <div>
-            <span className="eyebrow text-brand-gold">The Nasuru collection</span>
+              <span className="eyebrow text-brand-gold">Decatop roofing collection</span>
             <h1 className="mt-5 max-w-3xl font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-              Finishing touches, <span className="text-brand-gold">made simple.</span>
+                Roofing materials, <span className="text-brand-gold">priced clearly.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-              Browse wall panels, marble-look surfaces and rolls with clear sizes and catalog prices.
-              Find a finish you love, then chat with our team to order.
+                Browse imported roofing profiles, gauges and accessories. Prices are per square metre unless the product unit says otherwise.
+                Confirm availability and delivery with our team.
             </p>
             <a href="#shop-products" className="btn-gold mt-8 px-7 py-3.5">
               Explore {products.length} products <ArrowRight size={17} aria-hidden="true" />
@@ -291,7 +301,7 @@ export default function ShopCatalog({ products, whatsapp }: { products: Product[
                 </h2>
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-brand-muted">
-                Prices are per listed piece or roll. Confirm availability and delivery with us before ordering.
+                Prices are per square metre unless otherwise listed. Accessories and bundles are priced by their shown units.
               </p>
             </div>
 
@@ -370,15 +380,6 @@ export default function ShopCatalog({ products, whatsapp }: { products: Product[
             </div>
           )}
 
-          <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-2xl bg-white p-6 shadow-soft sm:flex-row sm:items-center sm:p-8">
-            <div>
-              <p className="font-serif text-xl font-semibold text-brand-ink">Planning a full wall?</p>
-              <p className="mt-1 text-sm text-brand-muted">Estimate quantities before you order, using the exact product sizes.</p>
-            </div>
-            <Link href="/calculator" className="btn-primary shrink-0">
-              Open the calculator <ArrowRight size={16} aria-hidden="true" />
-            </Link>
-          </div>
         </div>
       </section>
     </>

@@ -6,7 +6,7 @@ import GoogleRating from '@/components/GoogleRating';
 
 export default function Footer({ settings }: { settings?: Partial<SiteSettings> | null }) {
   const s = settings || {};
-  const businessName = (s.business_name || 'Nasuru Interiors').trim();
+  const businessName = (s.business_name || 'Decatop Global Roofing System').trim();
   const { first: firstPart, second: secondPart } = formatBusinessName(businessName);
   const displayAddress = formatAddress(s);
 
@@ -50,7 +50,7 @@ export default function Footer({ settings }: { settings?: Partial<SiteSettings> 
           {/* Anchor text differs from the header nav so each internal link label is unique on the page. */}
           <ul className="space-y-2.5 text-sm text-white/75">
             <li><Link href="/articles" className="transition-colors hover:text-white">Price Guides &amp; Decor Articles</Link></li>
-            <li><Link href="/about" className="transition-colors hover:text-white">About Nasuru Interiors</Link></li>
+            <li><Link href="/about" className="transition-colors hover:text-white">About Decatop Global Roofing System</Link></li>
           </ul>
         </div>
 

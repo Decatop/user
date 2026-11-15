@@ -13,7 +13,7 @@ export const DEFAULT_OG_IMAGE = {
   url: '/og-image.jpg',
   width: 1200,
   height: 675,
-  alt: 'Nasuru Interiors: wall panels and interior decor supply in Lagos, Nigeria',
+  alt: 'Decatop Global Roofing System: wall panels and interior decor supply in Lagos, Nigeria',
 };
 
 /** HomeGoodsStore / LocalBusiness schema, the core of local SEO for an interior deco supplier. */

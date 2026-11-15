@@ -33,7 +33,7 @@ function getGalleryImages(product: Awaited<ReturnType<typeof getProduct>>): Prod
 }
 
 function productDescription(product: NonNullable<Awaited<ReturnType<typeof getProduct>>>): string {
-  return product.description?.trim() || `${product.name} in ${product.size}. Contact Nasuru Interiors for availability and delivery options.`;
+  return product.description?.trim() || `${product.name} in ${product.size}. Contact Decatop Global Roofing System for availability and delivery options.`;
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
@@ -85,8 +85,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   const specifications = [
     { name: 'Listed size', value: product.size },
-    { name: 'Calculator dimensions', value: `${product.width} m × ${product.length} m` },
-    { name: 'Calculator item type', value: product.kind === 'strip' ? 'Upright strip panel' : product.kind === 'roll' ? 'Roll' : 'Sheet or board' },
+    ...(product.calculatorEnabled && product.width !== null && product.length !== null
+      ? [
+          { name: 'Calculator dimensions', value: `${product.width} m × ${product.length} m` },
+          { name: 'Calculator item type', value: product.kind === 'strip' ? 'Upright strip panel' : product.kind === 'roll' ? 'Roll' : 'Sheet or board' },
+        ]
+      : []),
     ...(product.material ? [{ name: 'Material', value: product.material }] : []),
     ...(product.origin ? [{ name: 'Origin', value: product.origin }] : []),
     ...(product.thicknessMm != null ? [{ name: 'Thickness', value: `${product.thicknessMm} mm` }] : []),
@@ -145,7 +149,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   : `₦${Math.round(product.price).toLocaleString('en-NG')}`}
               </p>
               {product.price !== null && <p className="mt-1 text-sm text-brand-muted">per {product.unitName}</p>}
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              <div className={`mt-5 grid gap-3 ${product.calculatorEnabled ? 'sm:grid-cols-2' : ''}`}>
                 <a
                   href={orderHref}
                   target={digits ? '_blank' : undefined}
@@ -155,12 +159,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <MessageCircle size={17} aria-hidden="true" />
                   {digits ? 'Chat to order' : 'Request details'}
                 </a>
-                <Link
-                  href={`/calculator?p=${encodeURIComponent(product.id)}`}
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-ink px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-primary"
-                >
-                  <Calculator size={17} aria-hidden="true" /> Calculate quantity
-                </Link>
+                {product.calculatorEnabled && (
+                  <Link
+                    href={`/calculator?p=${encodeURIComponent(product.id)}`}
+                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-ink px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-primary"
+                  >
+                    <Calculator size={17} aria-hidden="true" /> Calculate quantity
+                  </Link>
+                )}
               </div>
               {product.guide && (
                 <Link href={product.guide} className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-primary hover:underline">

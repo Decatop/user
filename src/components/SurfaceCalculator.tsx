@@ -40,13 +40,17 @@ export default function SurfaceCalculator({
   whatsapp?: string;
   products: Product[];
 }) {
+  const calculatorProducts = products.filter(
+    (product): product is Product & { width: number; length: number } =>
+      product.calculatorEnabled && product.width !== null && product.length !== null,
+  );
   // Row ids live per component (not module-level) so server and browser render the same ids.
   const nextId = useRef(1);
   const newRow = (): Row => ({ id: nextId.current++, width: '', height: '' });
   const [unit, setUnit] = useState<Unit>('m');
   const [walls, setWalls] = useState<Row[]>([{ id: 0, width: '', height: '' }]);
   const [openings, setOpenings] = useState<OpeningRow[]>([]);
-  const [productId, setProductId] = useState(products[0]?.id ?? CUSTOM);
+  const [productId, setProductId] = useState(calculatorProducts[0]?.id ?? CUSTOM);
   const [waste, setWaste] = useState(10);
   // Custom item: each side has its own unit, so "2ft x 1.2m" works.
   const [custom, setCustom] = useState({
@@ -64,20 +68,20 @@ export default function SurfaceCalculator({
     const q = new URLSearchParams(window.location.search);
     const p = q.get('p');
     const u = q.get('u') as Unit | null;
-    if (p && products.some((x) => x.id === p)) setProductId(p);
+    if (p && calculatorProducts.some((x) => x.id === p)) setProductId(p);
     if (u && u in UNIT_TO_M) setUnit(u);
     const w = q.get('w') || '';
     const h = q.get('h') || '';
     if (w || h) setWalls([{ id: 0, width: w, height: h }]);
-  }, [products]);
+  }, [calculatorProducts]);
 
   useEffect(() => {
-    if (productId !== CUSTOM && !products.some((item) => item.id === productId)) {
-      setProductId(products[0]?.id ?? CUSTOM);
+    if (productId !== CUSTOM && !calculatorProducts.some((item) => item.id === productId)) {
+      setProductId(calculatorProducts[0]?.id ?? CUSTOM);
     }
-  }, [products, productId]);
+  }, [calculatorProducts, productId]);
 
-  const product = products.find((p) => p.id === productId) ?? products[0];
+  const product = calculatorProducts.find((p) => p.id === productId) ?? calculatorProducts[0];
   const isCustom = productId === CUSTOM || !product;
   const item =
     isCustom
@@ -129,7 +133,7 @@ export default function SurfaceCalculator({
 
   const waText = ready
     ? [
-        'Hello Nasuru Interiors, I used the calculator on your website.',
+        'Hello Decatop Global Roofing System, I used the calculator on your website.',
         `Product: ${itemLabel}`,
         ...walls
           .filter((w) => num(w.width) && num(w.height))
@@ -141,7 +145,7 @@ export default function SurfaceCalculator({
         `Quantity: ${result.total} ${plural(result.total)} (${result.needed} + ${result.spares} spare)`,
         'Please confirm the price and delivery.',
       ].join('\n')
-    : 'Hello Nasuru Interiors, I need help working out how many panels I need.';
+    : 'Hello Decatop Global Roofing System, I need help working out how many panels I need.';
   const waHref = whatsapp ? `https://wa.me/${whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(waText)}` : null;
 
   return (
@@ -295,7 +299,7 @@ export default function SurfaceCalculator({
             Product
           </label>
           <select id="calc-product" className={inputCls} value={productId} onChange={(e) => setProductId(e.target.value)}>
-            {products.map((p) => (
+            {calculatorProducts.map((p) => (
               <option key={p.id} value={p.id}>
                 {describeProduct(p)}
                 {p.price !== null ? ` (${naira(p.price)})` : ' (price on request)'}

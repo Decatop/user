@@ -7,14 +7,14 @@ import { DEFAULT_OG_IMAGE, breadcrumbJsonLd } from '@/lib/seo';
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: 'Shop Wall Panels, Marble Sheets & Interior Finishes',
+  title: 'Roofing Sheets, Stone-Coated Tiles & Roofing Accessories',
   description:
-    'Browse Nasuru Interiors wall panels, PVC/UV marble sheets, boards and sticker rolls. Compare product sizes, thicknesses and prices, then order by WhatsApp.',
+    'Browse imported stone-coated tiles, aluminium roofing and alu-zinc sheets. Compare profiles, gauges and square-metre prices, then order by WhatsApp.',
   alternates: { canonical: '/shop' },
   openGraph: {
-    title: 'Shop Wall Panels, Marble Sheets & Interior Finishes',
+    title: 'Roofing Sheets, Stone-Coated Tiles & Roofing Accessories',
     description:
-      'Explore wall panels, marble-look sheets and rolls with clear sizes and catalog prices. Chat with Nasuru Interiors to order.',
+      'Explore stone-coated tiles, aluminium roofing, alu-zinc sheets and accessories with listed prices. Chat with Decatop Global Roofing System to order.',
     url: '/shop',
     images: [DEFAULT_OG_IMAGE],
   },

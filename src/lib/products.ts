@@ -1,4 +1,4 @@
-import productData from '../data/surface-products.json';
+import importedProductData from '../data/surface-products.json';
 
 // Edit src/data/surface-products.json to add products or update dimensions and prices.
 // Product dimensions are in metres, prices are in naira, and null means price on request.
@@ -17,10 +17,11 @@ export interface Product {
   /** Human size label shown in the list, e.g. "8ft x 4ft". */
   size: string;
   /** Width across the wall when fixed upright, in metres. */
-  width: number;
+  width: number | null;
   /** Length (height when fixed upright), in metres. For rolls, the roll length. */
-  length: number;
+  length: number | null;
   kind: ProductKind;
+  calculatorEnabled: boolean;
   /** Price per piece or roll in naira; null when the price isn't published. */
   price: number | null;
   unitName: string;
@@ -60,10 +61,15 @@ export function describeProduct(product: Product): string {
   return `${product.name}, ${product.size}${details.length ? ` · ${details.join(' · ')}` : ''}`;
 }
 
+const productData = importedProductData as Array<Omit<Product, 'calculatorEnabled'> & { calculatorEnabled?: boolean }>;
+
 const isProductKind = (kind: string): kind is ProductKind =>
   kind === 'sheet' || kind === 'strip' || kind === 'roll';
 
 export const PRODUCTS: Product[] = productData.map((product) => {
+  const calculatorEnabled = product.calculatorEnabled ?? true;
+  const width = product.width ?? null;
+  const length = product.length ?? null;
   if (!isProductKind(product.kind)) {
     throw new Error(`Unknown product kind "${product.kind}" for calculator product "${product.id}".`);
   }
@@ -72,10 +78,8 @@ export const PRODUCTS: Product[] = productData.map((product) => {
     !product.name ||
     !product.size ||
     !product.unitName ||
-    !Number.isFinite(product.width) ||
-    product.width <= 0 ||
-    !Number.isFinite(product.length) ||
-    product.length <= 0 ||
+    (calculatorEnabled && (width === null || !Number.isFinite(width) || width <= 0)) ||
+    (calculatorEnabled && (length === null || !Number.isFinite(length) || length <= 0)) ||
     (product.price !== null && (!Number.isFinite(product.price) || product.price < 0)) ||
     (product.thicknessMm != null &&
       (!Number.isFinite(product.thicknessMm) || product.thicknessMm <= 0))
@@ -83,7 +87,7 @@ export const PRODUCTS: Product[] = productData.map((product) => {
     throw new Error(`Invalid dimensions or price for calculator product "${product.id}".`);
   }
 
-  return { ...product, kind: product.kind };
+  return { ...product, width, length, calculatorEnabled, kind: product.kind };
 });
 
 export type Unit = 'm' | 'cm' | 'ft';

@@ -15,7 +15,7 @@ export const GOOGLE_PROFILE = {
   lat: 6.5364239,
   lng: 3.3519931,
   /** Name + street as Google lists them, so the map embed resolves to the business pin. */
-  mapsQuery: 'Nasuru Interiors, 15 Silver St, Mushin, Lagos',
+  mapsQuery: 'Decatop Global Roofing System, 15 Silver St, Mushin, Lagos',
 };
 
 /** Opening hours as listed on Google (24h, Lagos time). */
