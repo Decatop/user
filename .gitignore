@@ -1,0 +1,40 @@
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.*
+
+# Next.js build output
+/.next/
+/out/
+/build/
+next-env.d.ts
+
+# Deployment output
+/.vercel/
+
+# Local environment files; keep the example template shareable
+.env
+.env.*
+!.env.example
+
+# Test output
+/coverage/
+/playwright-report/
+/test-results/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# TypeScript and tooling caches
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Operating system and local certificates
+.DS_Store
+Thumbs.db
+*.pem
