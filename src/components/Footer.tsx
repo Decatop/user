@@ -1,12 +1,10 @@
 import Link from 'next/link';
 import type { SiteSettings } from '@/lib/types';
 import { formatAddress, formatBusinessName } from '@/lib/format';
-import { OPENING_HOURS } from '@/lib/google';
-import GoogleRating from '@/components/GoogleRating';
 
 export default function Footer({ settings }: { settings?: Partial<SiteSettings> | null }) {
   const s = settings || {};
-  const businessName = (s.business_name || 'Decatop Global Roofing System').trim();
+  const businessName = (s.business_name || 'Deca Top Global Roofing System').trim();
   const { first: firstPart, second: secondPart } = formatBusinessName(businessName);
   const displayAddress = formatAddress(s);
 
@@ -23,7 +21,7 @@ export default function Footer({ settings }: { settings?: Partial<SiteSettings> 
   const rawCopyright =
     s.copyright_text && s.copyright_text.trim()
       ? s.copyright_text
-      : `© {year} {business_name}. Interior decor supplies for beautiful homes and spaces.`;
+      : `© {year} {business_name}. Roofing materials and accessories for homes and projects.`;
 
   const copyrightText = rawCopyright
     .replace(/{business_name}/gi, businessName)
@@ -41,16 +39,14 @@ export default function Footer({ settings }: { settings?: Partial<SiteSettings> 
             {secondPart && <span className="text-brand-gold"> {secondPart}</span>}
           </p>
           {s.tagline && <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/70">{s.tagline}</p>}
-          <GoogleRating tone="dark" className="mt-4" />
-          <p className="mt-2 text-sm text-white/70">{OPENING_HOURS.label}</p>
         </div>
 
         <div>
           <p className="mb-4 text-xs font-bold uppercase tracking-wider2 text-brand-gold">Explore</p>
           {/* Anchor text differs from the header nav so each internal link label is unique on the page. */}
           <ul className="space-y-2.5 text-sm text-white/75">
-            <li><Link href="/articles" className="transition-colors hover:text-white">Price Guides &amp; Decor Articles</Link></li>
-            <li><Link href="/about" className="transition-colors hover:text-white">About Decatop Global Roofing System</Link></li>
+            <li><Link href="/articles" className="transition-colors hover:text-white">Roofing Guides</Link></li>
+            <li><Link href="/about" className="transition-colors hover:text-white">About Deca Top Global Roofing System</Link></li>
           </ul>
         </div>
 

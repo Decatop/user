@@ -10,16 +10,16 @@ export const revalidate = 60;
 
 export async function generateMetadata(): Promise<Metadata> {
   const s = await getSiteSettings();
-  const businessName = s.business_name || 'Decatop Global Roofing System';
+  const businessName = s.business_name || 'Deca Top Global Roofing System';
 
   return {
     // The root layout's title template already appends " | {business name}".
     title: 'About Us',
-    description: `Discover ${businessName}, your interior deco supply partner for curtains, wallpapers, wall panels, flooring, lighting and decor accessories.`,
+    description: `Learn about ${businessName}, a Nigeria-based supplier of stone-coated tiles, aluminium roofing, alu-zinc sheets and roofing accessories.`,
     alternates: { canonical: '/about' },
     openGraph: {
-      title: `About ${businessName}: Interior Deco Supply`,
-      description: `Learn about ${businessName}'s commitment to quality interior finishes, fair pricing and reliable supply for homes and commercial spaces.`,
+      title: `About ${businessName}: Roofing Systems`,
+      description: `Learn about ${businessName}'s roofing product range, gauges and quote process.`,
       url: '/about',
       images: [DEFAULT_OG_IMAGE],
     },
@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function AboutPage() {
   const [about, settings] = await Promise.all([getAbout(), getSiteSettings()]);
-  const businessName = settings.business_name || 'Decatop Global Roofing System';
+  const businessName = settings.business_name || 'Deca Top Global Roofing System';
   const displayAddress = formatAddress(settings);
 
   // Replace {business_name} placeholders dynamically with the Business Name set by the admin

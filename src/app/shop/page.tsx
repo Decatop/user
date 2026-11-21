@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Roofing Sheets, Stone-Coated Tiles & Roofing Accessories',
     description:
-      'Explore stone-coated tiles, aluminium roofing, alu-zinc sheets and accessories with listed prices. Chat with Decatop Global Roofing System to order.',
+      'Explore stone-coated tiles, aluminium roofing, alu-zinc sheets and accessories with listed prices. Chat with Deca Top Global Roofing System to order.',
     url: '/shop',
     images: [DEFAULT_OG_IMAGE],
   },

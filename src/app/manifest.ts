@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Decatop Global Roofing System',
-    short_name: 'Nasuru',
+    name: 'Deca Top Global Roofing System',
+    short_name: 'Deca Top',
     description:
-      'Interior deco supply: curtains, wallpapers, wall panels, flooring, lighting and decor accessories.',
+      'Imported stone-coated tiles, aluminium roofing, alu-zinc sheets and roofing accessories.',
     start_url: '/',
     display: 'standalone',
     background_color: '#f3f6fa',

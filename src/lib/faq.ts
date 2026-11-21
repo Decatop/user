@@ -1,35 +1,31 @@
-// Interior decor FAQs, used for both the on-page accordion and FAQPage structured data.
+// Roofing FAQs, used for both the on-page accordion and FAQPage structured data.
 export const FAQS: { q: string; a: string }[] = [
   {
-    q: 'What interior deco products does Decatop Global Roofing System supply?',
-    a: 'We supply curtains and blinds, upholstery fabrics, wallpapers, WPC, PVC, fluted and acoustic wall panels, SPC and vinyl flooring, flexible stone and ceramic cladding, outdoor decking and fence panels, lighting and decor accessories for homes, offices, hotels and showrooms.',
+    q: 'What roofing products does Deca Top Global Roofing System supply?',
+    a: 'The catalog includes imported stone-coated tiles, aluminium long-span, step tiles, Metcopo and caliper roofing, alu-zinc sheets, and roofing accessories.',
   },
   {
-    q: 'How much do wallpapers and wall panels cost?',
-    a: 'Prices depend on the material, size and quantity. As a guide, our fluted WPC wall panels start from ₦5,500 per piece, PU stone panels from ₦25,000, UV marble sheets from ₦45,000 per 8ft x 4ft sheet, acrylic marble boards from ₦65,000 and marble sticker rolls from ₦3,000. Share your wall size and style and we will give you a free, no-obligation quote for the full job.',
+    q: 'Which stone-coated tile profiles are available?',
+    a: 'The current price list includes Classic, Bond, Shingle, Milano and Roman profiles. Rates vary by gauge and, for medium and hard gauges, by color group.',
   },
   {
-    q: 'Do you install wall panels and marble sheets?',
-    a: 'Yes. We supply and install, so our team can measure your wall, fix the panels or sheets with the right adhesive and trims, and seal the joints for a clean finish. Ask for installation when you request your quote.',
+    q: 'How are roofing products priced?',
+    a: 'Most roofing sheet and tile prices are listed per square metre. Accessories are priced by the displayed kit, pack or piece unit. Alu-zinc bundle sheets are priced per bundle of 15 sheets.',
   },
   {
-    q: 'Do you offer bulk and trade pricing for designers and contractors?',
-    a: 'Yes. Interior designers, contractors and property developers get trade pricing on bulk and project orders. Contact us with your requirements for a tailored quote.',
+    q: 'What should I provide to request a roofing quote?',
+    a: 'Share your roof plan or measurements, project location, preferred roofing profile, gauge, grade and color. The team can then confirm the applicable price basis and availability.',
   },
   {
-    q: 'Can you help me choose colours, patterns and materials?',
-    a: 'Absolutely. Tell us about your space, lighting and budget and our team will recommend colours, textures and quantities that suit your style.',
+    q: 'Which aluminium roofing options are listed?',
+    a: 'The catalog lists aluminium long-span, step tiles, Metcopo and standard-gauge caliper roofing. A/B grades are shown for selected long-span, step-tile and Metcopo gauges.',
   },
   {
-    q: 'What is the difference between WPC and SPC?',
-    a: 'WPC (wood plastic composite) is used for wall panels and decking and gives a warm, wood-like look. SPC (stone plastic composite) has a dense mineral core and is mainly used for hard-wearing flooring. We will recommend the right one for your room.',
+    q: 'Are all gauge prices available?',
+    a: 'The 0.80 mm, 0.90 mm and 1.20 mm aluminium caliper rates are not listed. Contact the team to confirm those current prices.',
   },
   {
-    q: 'Can I get a sample before I order?',
-    a: 'Yes. Ask us for samples of panels, flooring or tiles so you can check colour and texture in your own lighting before you buy.',
-  },
-  {
-    q: 'Do you deliver?',
-    a: 'Yes, we arrange delivery of your order. Contact us with your location and we will confirm delivery options and timelines.',
+    q: 'Can you confirm delivery or installation for my project?',
+    a: 'Contact the team with your project location and requirements to confirm which delivery or installation services are currently available.',
   },
 ];

@@ -1,14 +1,14 @@
 import importedProductData from '../data/surface-products.json';
 
-// Edit src/data/surface-products.json to add products or update dimensions and prices.
-// Product dimensions are in metres, prices are in naira, and null means price on request.
+// Edit src/data/surface-products.json to add products or update specifications and prices.
+// Dimensions are optional until a product is used by a quantity estimator.
 
 export type ProductKind =
-  /** Rigid sheet or board: counted by how many fit across and up each wall. */
+  /** Rigid sheet or board. */
   | 'sheet'
-  /** Strip panel fixed upright (fluted): counted as vertical columns. */
+  /** Narrow strip product. */
   | 'strip'
-  /** Roll (stickers): counted like wallpaper, as wall-height drops per roll. */
+  /** Roll product. */
   | 'roll';
 
 export interface Product {
@@ -16,9 +16,9 @@ export interface Product {
   name: string;
   /** Human size label shown in the list, e.g. "8ft x 4ft". */
   size: string;
-  /** Width across the wall when fixed upright, in metres. */
+  /** Product width in metres, when known. */
   width: number | null;
-  /** Length (height when fixed upright), in metres. For rolls, the roll length. */
+  /** Product length in metres, when known. */
   length: number | null;
   kind: ProductKind;
   calculatorEnabled: boolean;

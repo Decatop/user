@@ -17,14 +17,14 @@ export async function generateMetadata({
   // against pointing page 2+ at page 1). Category-filtered views still canonicalise to /articles.
   const page = Math.max(1, parseInt(searchParams.page || '1', 10) || 1);
   const canonical = page > 1 && !searchParams.category ? `/articles?page=${page}` : '/articles';
-  const title = `Interior Design Articles & Decor Guides${page > 1 ? ` (Page ${page})` : ''}`;
+  const title = `Roofing Guides & Product Advice${page > 1 ? ` (Page ${page})` : ''}`;
   return {
     title,
-    description: `Interior decor ideas, buying guides and styling tips for curtains, wallpapers, wall panels, flooring and lighting from ${s.business_name}.`,
+    description: `Roofing product guides and buying advice for stone-coated tiles, aluminium roofing and alu-zinc sheets from ${s.business_name}.`,
     alternates: { canonical },
     openGraph: {
       title: `${title} | ${s.business_name}`,
-      description: 'Interior decor ideas, buying guides and styling tips.',
+      description: 'Roofing product guides, profile comparisons and quotation planning.',
       url: canonical,
       images: [DEFAULT_OG_IMAGE],
     },
@@ -59,9 +59,9 @@ export default async function ArticlesPage({
         />
         <div className="relative mx-auto max-w-2xl px-5">
           <span className="eyebrow justify-center">Insights & Guides</span>
-          <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-5xl">Interior Design Articles & Decor Guides</h1>
+          <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-5xl">Roofing Guides & Product Advice</h1>
           <p className="mt-4 text-white/80">
-            Expert ideas on curtains, wallpapers, wall panels, flooring, lighting and decor styling.
+            Product guidance for stone-coated tiles, aluminium profiles, alu-zinc sheets and roofing quotes.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default async function ArticlesPage({
         {data.items.length === 0 ? (
           <div className="rounded-3xl border border-dashed border-brand-ink/15 bg-white py-24 text-center">
             <p className="font-serif text-xl font-semibold text-brand-ink">No articles published yet</p>
-            <p className="mt-2 text-sm text-brand-muted">Check back soon for decor tips and guides.</p>
+            <p className="mt-2 text-sm text-brand-muted">Check back soon for roofing product guides and project advice.</p>
           </div>
         ) : (
           <>

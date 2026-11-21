@@ -16,6 +16,7 @@ export default function GoogleRating({
   className?: string;
 }) {
   const { rating, reviewCount, reviewsUrl } = GOOGLE_PROFILE;
+  if (rating === null || reviewCount === 0 || !reviewsUrl) return null;
   const full = Math.round(rating);
   const text = `${rating.toFixed(1)} from ${reviewCount} Google review${reviewCount === 1 ? '' : 's'}`;
   const textClass = tone === 'dark' ? 'text-white/90' : 'text-brand-ink';

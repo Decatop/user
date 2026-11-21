@@ -1,26 +1,29 @@
 import type { Article, SiteSettings } from './types';
 import type { Product } from './products';
-import { GOOGLE_PROFILE, OPENING_HOURS } from './google';
+import { googleMapsSearchUrl } from './google';
 
 const DEFAULT_SITE_URL =
-  process.env.NODE_ENV === 'production' ? 'https://interiors.nasuru.com' : 'http://localhost:3000';
+  process.env.NODE_ENV === 'production' ? 'https://dtoproofingsystem.com' : 'http://localhost:3000';
 
 /** Canonical origin (no trailing slash) used for canonicals, sitemap and structured data. */
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/+$/, '');
 
-/** Branded share card (public/og-image.jpg, made in Canva) for pages without their own cover. */
+/** Branded roofing share card for pages without their own cover. */
 export const DEFAULT_OG_IMAGE = {
   url: '/og-image.jpg',
   width: 1200,
   height: 675,
-  alt: 'Decatop Global Roofing System: wall panels and interior decor supply in Lagos, Nigeria',
+  alt: 'Deca Top Global Roofing System roofing materials in Lagos, Nigeria',
 };
 
-/** HomeGoodsStore / LocalBusiness schema, the core of local SEO for an interior deco supplier. */
+/** Local business schema based only on business details configured by the admin. */
 export function localBusinessJsonLd(s: SiteSettings) {
+  const mapQuery = [s.business_name, s.address, s.city, s.state, s.country]
+    .filter(Boolean)
+    .join(', ');
   return {
     '@context': 'https://schema.org',
-    '@type': 'HomeGoodsStore',
+    '@type': 'RoofingContractor',
     name: s.business_name,
     description: s.default_meta_description,
     url: SITE_URL,
@@ -38,31 +41,22 @@ export function localBusinessJsonLd(s: SiteSettings) {
           },
         }
       : {}),
-    // Admin-set coordinates win; otherwise use the Google Business Profile pin.
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: s.lat ?? GOOGLE_PROFILE.lat,
-      longitude: s.lng ?? GOOGLE_PROFILE.lng,
-    },
-    hasMap: GOOGLE_PROFILE.mapsUrl,
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: OPENING_HOURS.days,
-      opens: OPENING_HOURS.opens,
-      closes: OPENING_HOURS.closes,
-    },
+    ...(s.lat !== null && s.lng !== null
+      ? { geo: { '@type': 'GeoCoordinates', latitude: s.lat, longitude: s.lng } }
+      : {}),
+    ...(mapQuery ? { hasMap: googleMapsSearchUrl(mapQuery) } : {}),
     areaServed: [
       ...(s.city ? [{ '@type': 'City', name: s.city }] : []),
       { '@type': 'Country', name: s.country || 'Nigeria' },
     ],
     knowsAbout: [
-      'Interior decor',
-      'Curtains and blinds',
-      'Wallpapers',
-      'Wall panels',
-      'Flooring',
-      'Lighting',
-      'Upholstery fabrics',
+      'Stone-coated roofing tiles',
+      'Aluminium roofing sheets',
+      'Aluminium long-span roofing',
+      'Aluminium step tiles',
+      'Metcopo roofing',
+      'Alu-zinc roofing sheets',
+      'Roofing accessories',
     ],
     sameAs: [s.facebook_url, s.instagram_url, s.youtube_url, s.tiktok_url].filter(
       Boolean,

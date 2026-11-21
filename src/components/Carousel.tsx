@@ -37,7 +37,7 @@ export default function Carousel({ images }: { images: CarouselImage[] }) {
             Craftsmanship You Can Trust
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-brand-muted">
-            Curtains, wallpapers, wall panels, flooring and decor, supplied for homes and commercial interiors.
+            Roofing materials and accessories for residential and commercial projects.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function Carousel({ images }: { images: CarouselImage[] }) {
               <div key={img.id} className="relative h-[360px] min-w-full sm:h-[480px]">
                 <Image
                   src={img.image_url}
-                  alt={img.alt || 'Decatop Global Roofing System interior decor supplies'}
+                  alt={img.alt || 'Deca Top Global Roofing System roofing materials'}
                   fill
                   sizes="100vw"
                   className="object-cover"

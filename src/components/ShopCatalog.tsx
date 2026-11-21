@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
-import { ArrowRight, Calculator, Check, Layers, MessageCircle, Search, SlidersHorizontal } from 'lucide-react';
+import { ArrowRight, Check, Layers, MessageCircle, Search, SlidersHorizontal } from 'lucide-react';
 import { describeProduct, type Product } from '@/lib/products';
 
 type ProductGroup = 'stone-coated' | 'aluminium' | 'alu-zinc' | 'accessories' | 'other';
@@ -33,16 +33,6 @@ function groupLabel(group: ProductGroup): string {
   if (group === 'alu-zinc') return 'Alu-zinc roofing';
   if (group === 'accessories') return 'Roofing accessory';
   return 'Other product';
-}
-
-function formatMeters(value: number): string {
-  return `${Number(value.toFixed(4)).toLocaleString('en-NG')} m`;
-}
-
-function calculatorKindLabel(kind: Product['kind']): string {
-  if (kind === 'strip') return 'Upright strip panel';
-  if (kind === 'roll') return 'Roll';
-  return 'Sheet or board';
 }
 
 function ProductArtwork({ product }: { product: Product }) {
@@ -109,7 +99,7 @@ function ProductArtwork({ product }: { product: Product }) {
 function ProductCard({ product, whatsapp }: { product: Product; whatsapp?: string }) {
   const digits = whatsapp?.replace(/\D/g, '');
   const orderMessage = [
-    'Hello Decatop Global Roofing System, I would like to order:',
+    'Hello Deca Top Global Roofing System, I would like to order:',
     describeProduct(product),
     product.price === null
       ? 'Please confirm the current price.'
@@ -125,16 +115,10 @@ function ProductCard({ product, whatsapp }: { product: Product; whatsapp?: strin
 
   const specifications = [
     { label: 'Listed size', value: product.size },
-    product.calculatorEnabled && product.width !== null && product.length !== null
-      ? { label: 'Calculator dimensions', value: `${formatMeters(product.width)} × ${formatMeters(product.length)}` }
-      : null,
-    product.calculatorEnabled ? { label: 'Calculator item type', value: calculatorKindLabel(product.kind) } : null,
     product.material ? { label: 'Material', value: product.material } : null,
     product.origin ? { label: 'Origin', value: product.origin } : null,
     product.thicknessMm != null ? { label: 'Thickness', value: `${product.thicknessMm} mm` } : null,
   ].filter((specification): specification is { label: string; value: string } => specification !== null);
-  const calculatorHref = `/calculator?p=${encodeURIComponent(product.id)}`;
-
   return (
     <article
       id={`product-${product.id}`}
@@ -201,17 +185,7 @@ function ProductCard({ product, whatsapp }: { product: Product; whatsapp?: strin
             View product details <ArrowRight size={15} aria-hidden="true" />
           </Link>
 
-          <div className={`mt-5 grid gap-2 ${product.calculatorEnabled ? 'sm:grid-cols-2' : ''}`}>
-            {product.calculatorEnabled && (
-              <Link
-                href={calculatorHref}
-                aria-label={`Calculate quantity for ${product.name}`}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-ink px-3 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-primary focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2"
-              >
-                <Calculator size={17} aria-hidden="true" />
-                Calculate quantity
-              </Link>
-            )}
+          <div className="mt-5 grid gap-2">
             <a
               href={orderHref}
               target={digits ? '_blank' : undefined}
@@ -265,7 +239,7 @@ export default function ShopCatalog({ products, whatsapp }: { products: Product[
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_10%,rgba(201,162,39,0.2),transparent_38%),linear-gradient(120deg,rgba(20,33,47,0.2),transparent)]" />
         <div className="relative mx-auto grid max-w-content gap-10 px-5 pb-14 pt-36 sm:pb-16 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:pb-20">
           <div>
-              <span className="eyebrow text-brand-gold">Decatop roofing collection</span>
+              <span className="eyebrow text-brand-gold">Deca Top roofing collection</span>
             <h1 className="mt-5 max-w-3xl font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
                 Roofing materials, <span className="text-brand-gold">priced clearly.</span>
             </h1>

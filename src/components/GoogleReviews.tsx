@@ -4,7 +4,8 @@ import GoogleRating from '@/components/GoogleRating';
 
 /** Real Google reviews from the Business Profile, with links to read all and leave a review. */
 export default function GoogleReviews() {
-  if (!GOOGLE_REVIEWS.length) return null;
+  if (!GOOGLE_REVIEWS.length || !GOOGLE_PROFILE.reviewsUrl) return null;
+  const reviewsUrl = GOOGLE_PROFILE.reviewsUrl;
 
   return (
     <section className="bg-brand-deep py-20">
@@ -33,10 +34,10 @@ export default function GoogleReviews() {
         </ul>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <a href={GOOGLE_PROFILE.reviewsUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
+          <a href={reviewsUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
             Read all {GOOGLE_PROFILE.reviewCount} reviews on Google
           </a>
-          <a href={GOOGLE_PROFILE.reviewsUrl} target="_blank" rel="noopener noreferrer" className="btn-outline">
+          <a href={reviewsUrl} target="_blank" rel="noopener noreferrer" className="btn-outline">
             Bought from us? Leave a review
           </a>
         </div>

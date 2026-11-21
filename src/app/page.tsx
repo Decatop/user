@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ShieldCheck, Truck, Award, PhoneCall, LayoutGrid, Sparkles } from 'lucide-react';
-import { getAbout, getArticles, getCarousel, getHero, getProducts, getSiteSettings } from '@/lib/api';
+import { getAbout, getArticles, getCarousel, getHero, getSiteSettings } from '@/lib/api';
 import Hero from '@/components/Hero';
 import Carousel from '@/components/Carousel';
 import ArticleCard from '@/components/ArticleCard';
@@ -12,64 +12,59 @@ import Team from '@/components/Team';
 import JsonLd from '@/components/JsonLd';
 import { faqJsonLd } from '@/lib/seo';
 import { FAQS } from '@/lib/faq';
-import { GOOGLE_PROFILE } from '@/lib/google';
 
 export const revalidate = 60;
 
 const STATS = [
-  { value: '5+', label: 'Product categories' },
-  { value: `${GOOGLE_PROFILE.rating.toFixed(1)}★`, label: 'Google rating' },
-  { value: 'Trade', label: 'Pricing for pros' },
-  { value: 'Free', label: 'Quotes' },
+  { value: 'Imported', label: 'Roofing products' },
+  { value: '0.45–0.55 mm', label: 'Stone-coated gauges' },
+  { value: '0.40–0.75 mm', label: 'Long-span aluminium gauges' },
+  { value: '0.16–0.30 mm', label: 'Alu-zinc gauges' },
 ];
 
 const FEATURES = [
-  { icon: ShieldCheck, title: 'Quality Materials', text: 'Curtains, wallpapers, wall panels and flooring selected for finish and durability.' },
-  { icon: Truck, title: 'Supply & Delivery', text: 'Reliable supply for single rooms and full project fit-outs.' },
-  { icon: Award, title: 'Trusted by Designers', text: 'The go-to deco supplier for homeowners, interior designers and contractors.' },
+  { icon: ShieldCheck, title: 'Roofing Profiles', text: 'Choose from stone-coated tiles, aluminium roofing, alu-zinc sheets and accessories.' },
+  { icon: Truck, title: 'Gauge & Grade Options', text: 'Compare the listed thicknesses, A/B grades and color-dependent stone-coated rates.' },
+  { icon: Award, title: 'Project Quotes', text: 'Share your roof plan, preferred profile and gauge to request current pricing.' },
 ];
 
 const CATEGORIES = [
-  { title: 'Wall Panels', text: 'WPC, PVC and fluted panels for feature walls, TV backdrops and lobbies.' },
-  { title: 'Acoustic Panels', text: 'Sound-softening panels that reduce echo in offices, studios and homes.' },
-  { title: 'Flooring', text: 'SPC, WPC and vinyl flooring in wood, stone and concrete looks.' },
-  { title: 'Outdoor Decor', text: 'Decking, fence panels and cladding built for patios, balconies and gardens.' },
-  { title: 'Stone & Tiles', text: 'Lightweight flexible stone and ceramic-look cladding for walls and columns.' },
-  { title: 'Curtains & Wallpaper', text: 'Curtains, blinds, upholstery fabrics and wallpapers to finish the room.' },
+  { title: 'Stone-Coated Tiles', text: 'Classic, Bond, Shingle, Milano and Roman profiles in low, medium and hard gauges.' },
+  { title: 'Aluminium Long Span', text: 'Long-span sheets listed by gauge, with A/B grade options where provided.' },
+  { title: 'Step Tiles & Metcopo', text: 'Aluminium profiles with listed gauge and grade-specific prices.' },
+  { title: 'Aluminium Caliper', text: 'Standard gauges from 0.35 mm to 1.20 mm; ask for the unlisted rates.' },
+  { title: 'Alu-Zinc Roofing', text: 'Long-span gauges and 15-sheet bundles, priced by the listed unit.' },
+  { title: 'Roofing Accessories', text: 'Sealant kits, nail packs and Sunbreaker products.' },
 ];
 
 const STEPS = [
-  { icon: PhoneCall, title: 'Get a Free Quote', text: "Tell us your room size and style, we'll price it, no obligation." },
-  { icon: LayoutGrid, title: 'Choose Your Style', text: 'Pick from curtains, wallpapers, panels, flooring and decor in your colours.' },
-  { icon: Truck, title: 'Fast Delivery', text: 'Delivered to your home or project site.' },
-  { icon: Sparkles, title: 'Expert Advice', text: 'Our team helps you match colours, textures and quantities.' },
+  { icon: PhoneCall, title: 'Share Your Requirements', text: 'Send your roof plan or measurements and project location.' },
+  { icon: LayoutGrid, title: 'Choose a Profile', text: 'Select the roofing type, gauge, grade and color you need.' },
+  { icon: Truck, title: 'Request a Quote', text: 'Ask us to confirm the applicable price and availability.' },
+  { icon: Sparkles, title: 'Confirm Your Order', text: 'Check the sheet, bundle or accessory unit before ordering.' },
 ];
 
-// Keyword anchors for the 2026 price guides. Labels deliberately differ from the article titles
-// shown in the "Latest Articles" cards so no anchor text repeats on the page.
 const PRICE_GUIDES = [
-  { label: 'marble sticker prices', slug: 'price-of-marble-stickers-in-nigeria-lagos-2026' },
-  { label: 'self-adhesive marble sticker rolls', slug: 'price-of-self-adhesive-marble-stickers-in-nigeria-lagos-2026' },
-  { label: 'UV marble sheet prices', slug: 'price-of-marble-sheets-in-nigeria-lagos-2026' },
-  { label: 'acrylic marble board prices', slug: 'price-of-acrylic-marble-board-in-nigeria-lagos-2026' },
-  { label: 'fluted wall panel prices', slug: 'price-of-fluted-wall-panels-in-nigeria-lagos-2026' },
-  { label: 'PU stone panel prices', slug: 'price-of-pu-stone-wall-panels-in-nigeria-lagos-2026' },
+  { label: 'stone-coated tile profiles and gauges', slug: 'benefits-of-stone-coated-roofing-tiles-nigeria' },
+  { label: 'aluminium roofing sheet options', slug: 'buying-aluminium-roofing-sheets-nigeria' },
+  { label: 'aluminium vs stone-coated roofing', slug: 'aluminium-or-stone-coated-roofing-lagos' },
+  { label: 'roof sheet quantity planning', slug: 'calculate-roofing-sheets-for-building' },
+  { label: 'roofing quote cost factors', slug: 'why-roofing-quotes-differ-nigeria' },
 ];
 
 export default async function HomePage() {
-  const [hero, settings, carousel, latest, about, products] = await Promise.all([
+  const [hero, settings, carousel, latest, about] = await Promise.all([
     getHero(),
     getSiteSettings(),
     getCarousel(),
     getArticles(1, 6),
     getAbout(),
-    getProducts(),
   ]);
 
   return (
     <>
       <JsonLd data={faqJsonLd(FAQS)} />
-      <Hero hero={hero} settings={settings} products={products} />
+      <Hero hero={hero} settings={settings} />
 
       {/* Stats band */}
       <section className="bg-brand-ink">
@@ -93,7 +88,7 @@ export default async function HomePage() {
                 <h2 className="mt-3 font-serif text-3xl font-semibold text-brand-ink sm:text-4xl">
                   Latest Articles
                 </h2>
-                <p className="mt-2 text-brand-muted">The 6 newest decor ideas, buying guides and styling tips.</p>
+                <p className="mt-2 text-brand-muted">Roofing material guides, profile comparisons and quotation planning.</p>
               </div>
               <Link href="/articles" className="btn-ghost">
                 View all articles
@@ -116,7 +111,7 @@ export default async function HomePage() {
           <Reveal className="mb-12 text-center">
             <span className="eyebrow justify-center">What We Supply</span>
             <h2 className="mt-3 font-serif text-3xl font-semibold text-brand-ink sm:text-4xl">
-              Everything for a Finished Interior
+              Roofing Options for Your Project
             </h2>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -164,7 +159,7 @@ export default async function HomePage() {
           <Reveal className="mb-12 text-center">
             <span className="eyebrow justify-center">How It Works</span>
             <h2 className="mt-3 font-serif text-3xl font-semibold text-brand-ink sm:text-4xl">
-              From quote to finished room
+              From roofing requirements to quote
             </h2>
           </Reveal>
           <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
@@ -192,27 +187,23 @@ export default async function HomePage() {
       {/* SEO intro copy */}
       <section className="bg-brand-bg py-24">
         <Reveal className="mx-auto max-w-3xl px-5 text-center">
-          <span className="eyebrow justify-center">Why Decatop Global Roofing System</span>
+          <span className="eyebrow justify-center">Why Deca Top Global Roofing System</span>
           <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-brand-ink sm:text-4xl">
-            Your Interior Deco Supply Partner
+            Roofing Materials for Homes and Projects
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-brand-muted">
-            {settings.business_name} supplies quality curtains, wallpapers, wall panels, flooring,
-            lighting and decor accessories for homes, offices, hotels and showrooms. From a single
-            room refresh to a full fit-out, we deliver beautiful, durable interior finishes at
-            competitive prices, backed by expert advice and reliable service.
+            {settings.business_name} supplies imported stone-coated tiles, aluminium roofing,
+            alu-zinc sheets and roofing accessories. The catalog lists products by profile, gauge,
+            grade, color and price unit so you can compare the options for your project.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-brand-muted">
-            We stock the finishes Lagos homeowners, interior designers and contractors ask for most:
-            PVC and UV marble sheets, acrylic marble boards, marble stickers and self-adhesive marble
-            wallpaper, WPC fluted wall panels, PU stone panels, acoustic panels, SPC and vinyl
-            flooring, curtains, blinds and wallpapers. Visit our {settings.city || 'Mushin'},{' '}
-            {settings.state || 'Lagos'} store to see colours and textures in person, or send us your
-            wall size for a quick quantity count and delivery quote.
+            Stone-coated tile rates vary by profile, gauge and color. Aluminium long-span, step tile,
+            Metcopo and caliper options are listed by thickness, with A/B grades shown where supplied.
+            Alu-zinc long span is listed by square metre and bundle sheets by a 15-sheet bundle.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-brand-muted">
-            Planning a budget? Our 2026 price guides list current Lagos prices and show how much you
-            need for a typical wall:{' '}
+            For a project quotation, share your roof plan or measurements, location and preferred
+            roofing profile. These guides explain the product choices and quotation details:{' '}
             {PRICE_GUIDES.map((g, i) => (
               <span key={g.slug}>
                 <Link href={`/articles/${g.slug}`} className="font-semibold text-brand-primary hover:underline">
@@ -253,8 +244,8 @@ export default async function HomePage() {
         />
         <Reveal className="relative mx-auto max-w-2xl px-5">
           <span className="eyebrow justify-center">Get Started</span>
-          <h2 className="mt-4 font-serif text-3xl font-semibold sm:text-4xl">Ready to transform your space?</h2>
-          <p className="mt-3 text-white/80">Get a free quote on premium interior decor supplies today.</p>
+          <h2 className="mt-4 font-serif text-3xl font-semibold sm:text-4xl">Planning a roofing project?</h2>
+          <p className="mt-3 text-white/80">Ask about profiles, gauges, colors and current product availability.</p>
           <Link href="/about" className="btn-gold mt-8 px-9 py-3.5">
             Contact Us
           </Link>

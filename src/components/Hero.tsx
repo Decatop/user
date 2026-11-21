@@ -4,8 +4,6 @@ import { ChevronDown } from 'lucide-react';
 import type { HeroSettings, SiteSettings } from '@/lib/types';
 import GoogleRating from '@/components/GoogleRating';
 import SearchForm from '@/components/SearchForm';
-import QuickCalculator from '@/components/QuickCalculator';
-import type { Product } from '@/lib/products';
 
 /**
  * Admin-designed hero. With background_type "image" + an image it renders the
@@ -15,15 +13,10 @@ import type { Product } from '@/lib/products';
 export default function Hero({
   hero,
   settings,
-  products,
 }: {
   hero: HeroSettings;
   settings: SiteSettings;
-  products: Product[];
 }) {
-  const hasCalculatorProducts = products.some(
-    (product) => product.calculatorEnabled && product.width !== null && product.length !== null,
-  );
   const useImage = hero.background_type === 'image' && !!hero.image_url;
   const fallbackColor = hero.background_color || settings.default_hero_color || '#2F5D8C';
 
@@ -66,15 +59,7 @@ export default function Hero({
         />
       )}
 
-      <div className={`relative z-10 mx-auto grid w-full max-w-content gap-10 px-5 pb-14 pt-24 ${hasCalculatorProducts ? 'lg:grid-cols-[1.1fr_0.9fr]' : 'lg:grid-cols-1'} lg:items-center lg:gap-14 lg:py-28`}>
-        {/* Quick calculator: first thing on phones, right-hand column on desktop. It comes first
-            in the page so phone users (and keyboard/screen-reader users) reach it straight away. */}
-        {hasCalculatorProducts && (
-          <div className="lg:order-last">
-            <QuickCalculator whatsapp={settings.whatsapp} products={products} />
-          </div>
-        )}
-
+      <div className="relative z-10 mx-auto grid w-full max-w-content gap-10 px-5 pb-14 pt-24 lg:grid-cols-1 lg:items-center lg:gap-14 lg:py-28">
         {/* No fade-in here: the heading is the phone LCP element, and animating it from
             opacity 0 delayed LCP by the length of the animation. */}
         <div>
