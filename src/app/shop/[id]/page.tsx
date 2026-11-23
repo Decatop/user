@@ -44,20 +44,22 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const images = getGalleryImages(product);
   const shareImage = images[0]?.url || DEFAULT_OG_IMAGE.url;
 
+  const seoTitle = `${product.name} - ${product.size}`;
+
   return {
-    title: product.name,
+    title: seoTitle,
     description: description.slice(0, 300),
     alternates: { canonical: `/shop/${encodeURIComponent(product.id)}` },
     openGraph: {
       type: 'website',
-      title: product.name,
+      title: seoTitle,
       description: description.slice(0, 300),
       url: `/shop/${encodeURIComponent(product.id)}`,
       images: [{ url: shareImage, alt: images[0]?.alt || product.name }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: product.name,
+      title: seoTitle,
       description: description.slice(0, 300),
       images: [shareImage],
     },
