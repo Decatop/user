@@ -99,6 +99,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: 'window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} gtag("js", new Date());',
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PB2W283V" />
         {/* Warm up the Cloudinary connection early so the LCP image lands faster. */}
         <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
